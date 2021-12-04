@@ -15,6 +15,7 @@
 				<li><a href="products.html">Rings</a></li>
 				<li><a href="products.html">Gift cards</a></li>
 				<li><a href="products.html">Promotions</a></li>
+				<li><a href="store.html">store</a></li>
 			</ul>
 		</div>
 		<!-- / container -->
@@ -28,7 +29,7 @@
 				<h2>Genuine diamonds</h2>
 				<a href="#" class="btn-more">Read more</a>
 			</li>
-			<li class="purple" style="background-image: url({% static 'images/01.jpg' %}">
+			<li class="purple" style="background-image: url({% static 'images/01.jpg' %})">
 				<h3>You deserve to be beauty</h3>
 				<h2>golden bracelets</h2>
 				<a href="#" class="btn-more">Read more</a>
@@ -51,8 +52,8 @@
 					<article>
 						<img src="{{ product.images.url }}" alt="">
 						<h3>{{ product.product_name}} </h3>
-						<h4>${{ product.price}}</h4>
-						<a href="cart.html" class="btn-add">Add to cart</a>
+						<h4>€{{ product.price}}</h4>
+						<a href="store/" class="btn-add">Go to store</a>
 					</article>
 					{% endfor %}
 				</section>
