@@ -20,3 +20,6 @@ If required -
 to make migration
 $ python manage.py makemigrations
 
+to run project locally 
+python manage.py runserver
+
